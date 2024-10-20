@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Navigation */
+
+.nav-bar {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  color: white;
+  font-style: italic;
+  font-size: 28px;
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+.nav-left {
+  display: flex;
+  gap: 15px;
+  padding-right: 20px;
+}
+
+.nav-left li {
+  color: white;
+  list-style-type: none;
+}
+
+.nav-left a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.nav-left a:hover {
+  text-decoration-color: white;
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+
+/* Product Section */
+
+.product-container {
+  display: grid;
+  grid-row-gap: 20px;
+  grid-column-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  width: fit-content;
+  margin-top: 100px;
+}
+
+.product {
+  align-items: center;
+  background-color: rgb(50, 46, 46);
+  border-radius: 5px;
+  display: grid;
+  height: 400px;
+  justify-items: center;
+  max-width: 350px;
+  text-align: center;
+}
+
+.car-info {
+  width: 300px;
+}
+
+
+.details-btn {
+  background-color: rgb(212, 15, 15);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  height: 40px;
+  width: 310px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.details-btn:hover {
+  border-radius: 60px 0px 60px 0px;
+  background-color: white;
+  color: rgb(212, 15, 15);
+}

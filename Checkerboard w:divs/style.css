@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.checkerboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 75px auto;
+  width: 801px;
+  height: 801px;
+  border: 2px solid black;
+}
+
+.row-1, 
+.row-2,
+.row-3,
+.row-4,
+.row-5,
+.row-6,
+.row-7,
+.row-8 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.square-b {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+}
+
+.square-w {
+  background-color: white;
+  width: 100px;
+  height: 100px;
+}
